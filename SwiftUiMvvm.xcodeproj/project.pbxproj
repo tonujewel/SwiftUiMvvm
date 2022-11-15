@@ -14,6 +14,10 @@
 		F1E5B8E729235BA5007F7619 /* SwiftUiMvvmTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1E5B8E629235BA5007F7619 /* SwiftUiMvvmTests.swift */; };
 		F1E5B8F129235BA5007F7619 /* SwiftUiMvvmUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1E5B8F029235BA5007F7619 /* SwiftUiMvvmUITests.swift */; };
 		F1E5B8F329235BA5007F7619 /* SwiftUiMvvmUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1E5B8F229235BA5007F7619 /* SwiftUiMvvmUITestsLaunchTests.swift */; };
+		F1E5B901292360F3007F7619 /* UserDm.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1E5B900292360F3007F7619 /* UserDm.swift */; };
+		F1E5B904292361A3007F7619 /* ApiService.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1E5B903292361A3007F7619 /* ApiService.swift */; };
+		F1E5B907292362FF007F7619 /* HomeViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1E5B906292362FF007F7619 /* HomeViewModel.swift */; };
+		F1E5B90D29236F72007F7619 /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1E5B90C29236F72007F7619 /* HomeView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -44,6 +48,10 @@
 		F1E5B8EC29235BA5007F7619 /* SwiftUiMvvmUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SwiftUiMvvmUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		F1E5B8F029235BA5007F7619 /* SwiftUiMvvmUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftUiMvvmUITests.swift; sourceTree = "<group>"; };
 		F1E5B8F229235BA5007F7619 /* SwiftUiMvvmUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftUiMvvmUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		F1E5B900292360F3007F7619 /* UserDm.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserDm.swift; sourceTree = "<group>"; };
+		F1E5B903292361A3007F7619 /* ApiService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApiService.swift; sourceTree = "<group>"; };
+		F1E5B906292362FF007F7619 /* HomeViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewModel.swift; sourceTree = "<group>"; };
+		F1E5B90C29236F72007F7619 /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -94,6 +102,10 @@
 		F1E5B8D429235BA3007F7619 /* SwiftUiMvvm */ = {
 			isa = PBXGroup;
 			children = (
+				F1E5B90929236F43007F7619 /* View */,
+				F1E5B90829236F16007F7619 /* ViewModel */,
+				F1E5B90229236175007F7619 /* Services */,
+				F1E5B8FF29235FDF007F7619 /* Model */,
 				F1E5B8D529235BA3007F7619 /* SwiftUiMvvmApp.swift */,
 				F1E5B8D729235BA3007F7619 /* ContentView.swift */,
 				F1E5B8D929235BA5007F7619 /* Assets.xcassets */,
@@ -125,6 +137,38 @@
 				F1E5B8F229235BA5007F7619 /* SwiftUiMvvmUITestsLaunchTests.swift */,
 			);
 			path = SwiftUiMvvmUITests;
+			sourceTree = "<group>";
+		};
+		F1E5B8FF29235FDF007F7619 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				F1E5B900292360F3007F7619 /* UserDm.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		F1E5B90229236175007F7619 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				F1E5B903292361A3007F7619 /* ApiService.swift */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		F1E5B90829236F16007F7619 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				F1E5B906292362FF007F7619 /* HomeViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		F1E5B90929236F43007F7619 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				F1E5B90C29236F72007F7619 /* HomeView.swift */,
+			);
+			path = View;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -257,7 +301,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F1E5B901292360F3007F7619 /* UserDm.swift in Sources */,
 				F1E5B8D829235BA3007F7619 /* ContentView.swift in Sources */,
+				F1E5B904292361A3007F7619 /* ApiService.swift in Sources */,
+				F1E5B90D29236F72007F7619 /* HomeView.swift in Sources */,
+				F1E5B907292362FF007F7619 /* HomeViewModel.swift in Sources */,
 				F1E5B8D629235BA3007F7619 /* SwiftUiMvvmApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -417,6 +465,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"SwiftUiMvvm/Preview Content\"";
+				DEVELOPMENT_TEAM = 4DLX49A58J;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
@@ -445,6 +494,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"SwiftUiMvvm/Preview Content\"";
+				DEVELOPMENT_TEAM = 4DLX49A58J;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
